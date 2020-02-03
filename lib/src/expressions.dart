@@ -26,7 +26,7 @@ abstract class Expression {
   static final ExpressionParser _parser = new ExpressionParser();
 
   static Expression parse(String formattedString) =>
-      _parser.expression.end().parse(formattedString).value;
+      _parser.expression.parse(formattedString).value;
 }
 
 abstract class SimpleExpression implements Expression {
